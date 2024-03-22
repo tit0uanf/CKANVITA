@@ -1,0 +1,112 @@
+
+.nft_img_container{
+    margin:8px;
+  }
+.nft_img_container img {
+    width: 152px;
+    height: 202px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    object-fit: cover;
+  }
+
+.overlay-container {
+    position: relative;
+    overflow: hidden; /* This will ensure the scaled image doesn't overflow the container's rounded corners */
+    border-radius: 20px; /* Apply the border-radius to the container */
+}
+
+.overlay-container img {
+    display: block;
+    transition: transform 0.3s;
+}
+
+.overlay-container:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    width: 155px;
+    height: 205px;
+    border-radius: 20px;
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.93); 
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth fade-in animation */
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Vertically center the content */
+    padding-left:10px;
+}
+  
+  .centered-content {
+    text-align: left;  /* Optional: To center the text within each attribute_value div */
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .name_nft{
+    color:rgb(126, 127, 129);
+  }
+.overlay-container:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.value{
+    margin-bottom: 5px;
+}
+
+.drop_date{
+    font-weight: bold;
+}
+
+.common{
+    color:#FFEE00;
+    font-weight: bold;
+}
+.rare{
+    color:#05CCFF;
+    font-weight: bold;
+}
+
+.epic{
+    color:#DE3BFF;
+    font-weight: bold;
+}
+
+.legendary{
+    color:#E4B71E;
+    font-weight: bold;
+}
+
+.digital_twin{
+    color:#4400ff;
+    font-weight: bold;
+}
+
+.crop-nft-value {
+    width: 140px;  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+.pointer{
+    cursor: default;}

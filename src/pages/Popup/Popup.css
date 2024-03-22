@@ -1,0 +1,51 @@
+.app {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 7px;
+  margin-right: 7px;
+  padding-top: 7px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #282c34;
+  color: #e6eaf3;
+  border-radius: 18px;
+}
+/* table under the logo which element are separated by a line and start at the top */
+.App-table {
+  padding: 10px;
+  border-spacing: 10px 5px;
+  border-collapse: separate;
+}
+
+/* text with a modern font and large size */
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.table-text {
+  padding-left: 10px;
+}
+
+.viewer-icon {
+  display: flex;
+}

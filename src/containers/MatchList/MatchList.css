@@ -1,0 +1,31 @@
+.teams {
+  display: flex;
+  flex-direction: row;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  border: 2px solid hsla(0, 0%, 100%, 0.1);
+  box-sizing: border-box;
+  border-radius: 50px;
+  margin: 0 12px;
+  min-width: 54px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 110%;
+  color: var(--text-primary);
+}
+
+.team-logo {
+  width: 40px;
+  height: 40px;
+  display: inline;
+}
+
+.black-img {
+  filter: brightness(0) invert(1);
+
+}
