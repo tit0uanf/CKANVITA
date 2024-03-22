@@ -12,8 +12,7 @@ const Settings = () => {
 
   return (
     <div className="fixed top-1 right-1">
-      <a
-        href="/#"
+      <button
         className="fixed top-1 right-1 block shrink-0 rounded-lg bg-grey-500 p-2.5 select-auto text-gray-400 shadow-sm transition-transform hover:rotate-90"
         onClick={(event) => {
           startTransition(() => {
@@ -43,7 +42,7 @@ const Settings = () => {
             d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
           />
         </svg>
-      </a>
+      </button>
       {computeSettingsMenu()}
     </div>
   );
